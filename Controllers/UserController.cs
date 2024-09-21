@@ -9,6 +9,7 @@ using System.IO;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using System.Security.Cryptography;
+using System.Linq;
 
 
 namespace Seat_Reservation.Controllers;
@@ -76,11 +77,17 @@ return NoContent();
 
 public IActionResult RegisterUser([FromBody]User Model){
 
-    var usr=_context.Users.FirstOrDefault(x => x.User_Id==Model.User_Id);
+    var usr=_context.Users.Find(Model.User_Id);
     if(usr==null){
      _context.Add(Model);
      _context.SaveChanges();
-    return Ok();
+      var response = new
+            {
+                Message = "Request was successful!",
+                StatusCode = 200,
+                Data = new { ExampleData = "This is some example data." }
+            };
+    return Ok(response);
     }
     return BadRequest("Email already inserted");
 }

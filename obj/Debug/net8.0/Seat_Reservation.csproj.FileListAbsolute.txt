@@ -138,3 +138,4 @@ C:\Users\Rangana\Seat_Reservation\obj\Debug\net8.0\refint\Seat_Reservation.dll
 C:\Users\Rangana\Seat_Reservation\obj\Debug\net8.0\Seat_Reservation.pdb
 C:\Users\Rangana\Seat_Reservation\obj\Debug\net8.0\Seat_Reservation.genruntimeconfig.cache
 C:\Users\Rangana\Seat_Reservation\obj\Debug\net8.0\ref\Seat_Reservation.dll
+C:\Users\Rangana\Seat_Reservation\obj\Debug\net8.0\Seat_Reservation.sourcelink.json
